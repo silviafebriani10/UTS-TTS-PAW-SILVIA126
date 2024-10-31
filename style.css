@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(245, 245, 245); /* Warna abu terang untuk latar belakang */
+}
+
+/* Container Div 1 2 */
+#div-1 {
+    height: 410px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(235, 235, 235); /* Warna abu sedikit lebih gelap */
+    border-radius: 5px;
+}
+
+#div-2 {
+    height: 400px;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    background-color: rgb(250, 250, 250); /* Warna latar belakang putih */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 5px;
+}
+
+#div-3 {
+    height: 400px;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    background-color: rgb(250, 250, 250); /* Sama seperti #div-2 */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 5px;
+}
+
+#div-form {
+    margin: auto;
+    padding-top: 8px;
+    width: 1170px;
+    height: 250px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+}
+
+/* TTS */
+#frame-tts {
+    width: 530px;
+    height: 320px;
+    margin-top: 30px;
+    margin-left: 25px;
+    position: initial;
+}
+
+.box-kosong {
+    background-color: rgb(0, 0, 0); /* Kotak kosong hitam */
+    border: 1px solid rgb(70, 70, 70);
+    height: 30px;
+    width: 40px;
+    margin: 0.5px;
+    float: left;
+}
+
+.box-isi {
+    background-color: rgb(250, 250, 250); /* Kotak isi putih */
+    border: 1px solid rgb(70, 70, 70);
+    height: 30px;
+    width: 40px;
+    margin: 0.5px;
+    float: left;
+}
+
+.no {
+    color: rgb(70, 70, 70); /* Teks nomor dalam warna abu gelap */
+    font-size: 10px;
+}
+
+.jwb {
+    color: rgb(20, 20, 20); /* Teks jawaban dalam warna abu sangat gelap untuk kontras */
+}
+
+h3, h2 {
+    color: rgb(50, 50, 50);
+}
+
+p, ul {
+    color: rgb(60, 60, 60); /* Teks abu gelap agar mudah dibaca */
+}
+
+hr {
+    width: 98%;
+    margin: auto;
+    border-color: rgb(150, 150, 150); /* Garis abu gelap */
+}
+
+#form {
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 400px;
+}
+
+select {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(120, 120, 120);
+    background-color: rgb(240, 240, 240);
+    color: rgb(50, 50, 50);
+}
+
+input {
+    border: 1px solid rgb(120, 120, 120);
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(30, 30, 30);
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 80, 80); /* Tombol abu gelap */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(50, 50, 50);
+}
+
+#footer {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(100, 100, 100); /* Warna footer abu-abu */
+}
+
+@media screen and (max-width: 1170px) {
+    /* Responsif */
+    #div-1 {
+        flex-direction: column;
+        height: 650px;
+    }
+    #div-2, #div-3 {
+        width: 100%;
+        margin-left: 4px;
+        margin-right: 4px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    #div-1 {
+        flex-direction: column;
+        height: 650px;
+    }
+    #div-2, #div-3, #div-form {
+        width: 100%;
+        margin: 4px;
+    }
+}
